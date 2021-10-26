@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time and date</title>
+</head>
+<body>
+    <script>
+        let currentDate = new Date();
+
+        let year = currentDate.getFullYear();
+        let month = currentDate.getMonth() + 1;
+        let day = currentDate.getDate();
+        let hour = currentDate.getHours();
+        let minute = currentDate.getMinutes();
+
+        let fullDay = year + "/" + month + "/" + day + "-" + hour + ":" + minute;
+        
+        let output = () => console.log(fullDay);
+        
+
+        output();
+    </script>
+</body>
+</html>
